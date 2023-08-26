@@ -7,9 +7,8 @@ import org.openqa.selenium.devtools.v113.network.Network;
 import java.util.Optional;
 
 
-public class HTTPRequestMonitoring{
+public class HTTPRequestMonitoring {
 	
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws InterruptedException 
 	{
         // Set the path to the chrome driver executable
@@ -28,8 +27,6 @@ public class HTTPRequestMonitoring{
 	    DevTools devTools = ((ChromeDriver) driver).getDevTools();
 	    devTools.createSession();
         devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
-
-        devTools.send(Network.setRequestInterception(null));
 
 	    // Monitor network events                  	 
 	    devTools.addListener(Network.requestWillBeSent(), l -> {

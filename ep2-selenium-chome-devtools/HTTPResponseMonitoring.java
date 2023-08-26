@@ -5,7 +5,8 @@ import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v113.network.model.RequestId;
 import org.openqa.selenium.devtools.v113.network.Network;
 
-public class HTTPResponseMonitoring{		
+public class HTTPResponseMonitoring{
+    		
     public static void main(String[] args)
     {
         // Set the path to the chrome driver executable
