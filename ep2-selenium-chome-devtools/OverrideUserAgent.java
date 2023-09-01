@@ -21,20 +21,22 @@ public class LoadInsecureSite {
 	    options.addArguments("--remote-allow-origins=*");
 	    
         // Create a new instance of ChromeDriver with options
-		WebDriver driver = new ChromeDriver(options);
-				
+        WebDriver driver = new ChromeDriver(options);
+                
         // Enable DevTools
-	    DevTools devTools = ((ChromeDriver) driver).getDevTools();
-	    devTools.createSession();
-	    
-        devTools.send(Security.enable());
-        devTools.send(Security.setIgnoreCertificateErrors(true));
-	    
+        DevTools devTools = ((ChromeDriver) driver).getDevTools();
+        devTools.createSession();
+        devTools.send(Network.enable(Optional.empty(),Optional.empty(),Optional.empty()));
+
+        // Override User Agents
+        devTools.send(Network.setUserAgentOverride("Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) 
+                    AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/114.0.5735.99 Mobile/15E148 Safari/604.1",Optional.empty(),
+                    Optional.empty(),Optional.empty()));
+                    
         // Navigate to URL
-        driver.get("https://untrusted-root.badssl.com/");
+        driver.get("https://google.com/");
         
         // Quit the WebDriver
         driver.quit();
 	}
 }
-P
