@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9516" started-at="2023-09-09T13:45:39 EDT" finished-at="2023-09-09T13:45:49 EDT">
+    <groups>
+    </groups>
+    <test name="SmokeTests" duration-ms="9516" started-at="2023-09-09T13:45:39 EDT" finished-at="2023-09-09T13:45:49 EDT">
+      <class name="Newsletter.TestNGDependentClass">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Newsletter.TestNGDependentClass@32d2fa64]" name="setUp" is-config="true" duration-ms="9290" started-at="2023-09-09T13:45:39 EDT" finished-at="2023-09-09T13:45:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginPage()[pri:0, instance:Newsletter.TestNGDependentClass@32d2fa64]" name="LoginPage" duration-ms="9" started-at="2023-09-09T13:45:49 EDT" finished-at="2023-09-09T13:45:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method status="PASS" signature="HomePage()[pri:0, instance:Newsletter.TestNGDependentClass@32d2fa64]" name="HomePage" duration-ms="2" started-at="2023-09-09T13:45:49 EDT" depends-on-methods="Newsletter.TestNGDependentClass.LoginPage" finished-at="2023-09-09T13:45:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method status="PASS" signature="discontinueBRowser()[pri:0, instance:Newsletter.TestNGDependentClass@32d2fa64]" name="discontinueBRowser" is-config="true" duration-ms="153" started-at="2023-09-09T13:45:49 EDT" finished-at="2023-09-09T13:45:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discontinueBRowser -->
+      </class> <!-- Newsletter.TestNGDependentClass -->
+    </test> <!-- SmokeTests -->
+  </suite> <!-- Suite -->
+</testng-results>

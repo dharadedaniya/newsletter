@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="laterSelectedProduct" value="2"/>
+  <test thread-count="5" name="Validating homepage(failed)" parallel="tests">
+    <parameter name="selectStylist" value="2"/>
+    <parameter name="selectedProducts" value="5,6,7"/>
+    <classes>
+      <class name="Shopping.CatelogTest">
+        <methods>
+          <include name="select_and_verify_solid_colors_from_menu"/>
+          <include name="select_product_after_returning_from_cart"/>
+          <include name="add_and_verify_cart"/>
+        </methods>
+      </class> <!-- Shopping.CatelogTest -->
+      <class name="Shopping.ContinueAsGuestTest">
+        <methods>
+          <include name="verify_and_assert_clicked_on_continue_as_guest"/>
+          <include name="find_stylist_by_zipcode_and_select_stylist_and_verify_shipping_address_page"/>
+        </methods>
+      </class> <!-- Shopping.ContinueAsGuestTest -->
+      <class name="Shopping.CartTest">
+        <methods>
+          <include name="verify_checkout"/>
+          <include name="verify_added_product_in_cart_page"/>
+          <include name="verify_checkout_after_product_addition_and_continue_as_guest"/>
+          <include name="verify_added_product_in_cart_page_after_addtition"/>
+        </methods>
+      </class> <!-- Shopping.CartTest -->
+      <class name="Shopping.HomePageTest">
+        <methods>
+          <include name="select_and_verify_country"/>
+          <include name="terminate_browser"/>
+          <include name="initialize_driver"/>
+        </methods>
+      </class> <!-- Shopping.HomePageTest -->
+    </classes>
+  </test> <!-- Validating homepage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

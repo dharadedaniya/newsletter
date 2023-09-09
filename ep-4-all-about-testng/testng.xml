@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <!-- <groups>
+   	<run>
+   		<include name="smoke" />
+   	</run>
+   </groups> -->
+   <test name="SmokeTests">
+   <parameter name="username" value="user123" />
+   <parameter name="password" value="password123"/>
+   	<classes>
+     <!--  <class name="Newsletter.TestCaseWithAssignedPriority" />   	
+      <class name="Newsletter.TestCaseWithAndWithoutPriority" />   
+      <class name="Newsletter.TestCaseWithSamePriority" />
+      <class name="Newsletter.TestNGGroups" />
+      <class name="Newsletter.TestNGParameters" /> 
+      <class name="Newsletter.TestNGDataProvider" /> -->
+      <class name="Newsletter.TestNGDependentClass" />
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
