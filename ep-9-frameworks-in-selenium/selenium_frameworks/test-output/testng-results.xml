@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3756" started-at="2023-10-14T21:57:49 EDT" finished-at="2023-10-14T21:57:53 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3756" started-at="2023-10-14T21:57:49 EDT" finished-at="2023-10-14T21:57:53 EDT">
+      <class name="com.newsletter.selenium_frameworks.LoginTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.newsletter.selenium_frameworks.LoginTest@c46bcd4]" name="beforeSuite" is-config="true" duration-ms="3806" started-at="2023-10-14T21:57:45 EDT" finished-at="2023-10-14T21:57:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newsletter.selenium_frameworks.LoginTest@c46bcd4]" name="setUp" is-config="true" duration-ms="2435" started-at="2023-10-14T21:57:49 EDT" finished-at="2023-10-14T21:57:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.newsletter.selenium_frameworks.LoginTest@c46bcd4]" name="validLoginTest" duration-ms="7" started-at="2023-10-14T21:57:53 EDT" data-provider="testData" finished-at="2023-10-14T21:57:53 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.newsletter.selenium_frameworks.LoginTest@c46bcd4]" name="validLoginTest" duration-ms="2" started-at="2023-10-14T21:57:53 EDT" data-provider="testData" finished-at="2023-10-14T21:57:53 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.newsletter.selenium_frameworks.LoginTest@c46bcd4]" name="validLoginTest" duration-ms="2" started-at="2023-10-14T21:57:53 EDT" data-provider="testData" finished-at="2023-10-14T21:57:53 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[username3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.newsletter.selenium_frameworks.LoginTest@c46bcd4]" name="afterSuite" is-config="true" duration-ms="714" started-at="2023-10-14T21:57:53 EDT" finished-at="2023-10-14T21:57:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.newsletter.selenium_frameworks.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

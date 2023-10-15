@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.newsletter</groupId>
+  <artifactId>automation_framework_from_scratch</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>automation_framework_from_scratch</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <!-- SELENIUM -->
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>4.10.0</version>
+	</dependency>
+	
+    <!-- Apache POI for Excel (.xlsx) -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>4.1.2</version>
+    </dependency>	
+	
+	<!-- TestNG -->
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>7.1.0</version>
+	</dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
