@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+   <test name="ChromeTests">
+   <parameter name="browser" value="firefox" />
+   	<classes>
+      <class name="Newsletter.FirefoxSeleniumGrid" /> 
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FirefoxTests">
+   <parameter name="browser" value="firefox" />
+   	<classes>
+      <class name="Newsletter.FirefoxSeleniumGrid" /> 
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="EdgeTests">
+   <parameter name="browser" value="firefox" />
+   	<classes>
+      <class name="Newsletter.FirefoxSeleniumGrid" /> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

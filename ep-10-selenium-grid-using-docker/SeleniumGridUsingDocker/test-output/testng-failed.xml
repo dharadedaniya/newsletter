@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="3" name="ChromeTests(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Newsletter.FirefoxSeleniumGrid">
+        <methods>
+          <include name="discontinueBrowser"/>
+          <include name="testmethodA"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Newsletter.FirefoxSeleniumGrid -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+  <test thread-count="3" name="FirefoxTests(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Newsletter.FirefoxSeleniumGrid">
+        <methods>
+          <include name="discontinueBrowser"/>
+          <include name="testmethodA"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Newsletter.FirefoxSeleniumGrid -->
+    </classes>
+  </test> <!-- FirefoxTests(failed) -->
+  <test thread-count="3" name="EdgeTests(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Newsletter.FirefoxSeleniumGrid">
+        <methods>
+          <include name="discontinueBrowser"/>
+          <include name="testmethodA"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Newsletter.FirefoxSeleniumGrid -->
+    </classes>
+  </test> <!-- EdgeTests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
