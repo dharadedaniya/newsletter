@@ -29,8 +29,17 @@ public class ChromeSeleniumGrid {
 	public void setUp() throws MalformedURLException
 	{	
 		ChromeOptions chromeOptions = new ChromeOptions();
+
+
+		
 		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
 		driver.get("https://www.google.com/");
+
+
+
+
+
+
 	}
 	
 	@Test
